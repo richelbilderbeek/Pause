@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 /*
 Pause, tool to do nothing
-Copyright (C) 2010-2013 Richel Bilderbeek
+Copyright (C) 2010-2015 Richel Bilderbeek
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -57,18 +57,19 @@ const ribi::About ribi::PauseMenuDialog::GetAbout() noexcept
     "Richel Bilderbeek",
     "Pause",
     "tool to do nothing",
-    "the 25th of May 2013",
+    "the 20th of November 2015",
     "2010-2012",
     "http://www.richelbilderbeek.nl/ToolPause.htm",
     GetVersion(),
-    GetVersionHistory());
+    GetVersionHistory()
+  );
   //a.AddLibrary("AsciiArter version: " + AsciiArter::GetVersion());
   return a;
 }
 
 const std::string ribi::PauseMenuDialog::GetVersion() noexcept
 {
-  return "1.1";
+  return "2.0";
 }
 
 const std::vector<std::string> ribi::PauseMenuDialog::GetVersionHistory() noexcept
@@ -76,6 +77,7 @@ const std::vector<std::string> ribi::PauseMenuDialog::GetVersionHistory() noexce
   std::vector<std::string> v;
   v.push_back("2010-xx-xx: Version 1.0: initial version");
   v.push_back("2013-05-25: Version 1.1: added menu, conformized towards ProjectRichelBilderbeek");
+  v.push_back("2015-11-20: Version 2.0: moved to own GitHub");
   return v;
 }
 
