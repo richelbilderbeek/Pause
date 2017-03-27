@@ -38,7 +38,7 @@ script:
   # Build and run
   - qmake -qt=qt5 Pause.pro
   - make debug
-   ./Pause
+  - ./Pause
   # Get code coverage
   - ./get_code_cov
   - codecov
